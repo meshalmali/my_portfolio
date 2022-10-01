@@ -29,3 +29,15 @@
     margin-bottom: 2rem;
   }
 }
+
+@media only screen and (max-width: 690px) {
+  .card_image img {
+    height: 35px;
+  }
+
+  .card {
+    border-radius: 10px;
+    padding: 1px;
+    margin: 1px;
+  }
+}

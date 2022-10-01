@@ -76,3 +76,15 @@
     margin-bottom: 2rem;
   }
 }
+
+@media only screen and (max-width: 535px) {
+  .projectCard_link {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .projectCard_text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
