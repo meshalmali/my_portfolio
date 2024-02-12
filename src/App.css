@@ -1,7 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: 'Marck Script', cursive; */
+}
+
+.playfair-light {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-normal {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-medium {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-semibold {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-bold {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-extrabold {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-black {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.slide-in {
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-750px);
+    animation-timing-function: cubic-bezier(1, 0.2, 0.5, 0.8);
+  }
+  80% {
+    transform: translateX(50px);
+    animation-timing-function: cubic-bezier(1, 0.2, 0.5, 0.8);
+  }
+}
+
+.menu-slide {
+  animation: down 280ms ease-in-out;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-300px);
+    /* animation-timing-function: linear; */
+  }
+}
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shadow-right {
+  box-shadow: 12px 0px 15px #59595f;
+}
+.shadow-plain {
+  box-shadow: 8px 10px 4px #475569;
+}
+
+.shine-recurring {
+  position: absolute;
+  overflow: hidden;
+}
+
+.shine-recurring:after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -60%;
+  width: 15px;
+  height: 100px;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(124, 122, 122, 0.13);
+  background-color: #ffffffcc;
+  animation: shineAnimation 3s ease-in-out infinite; /* Adjust the duration as needed */
+}
+
+@keyframes shineAnimation {
+  0% {
+    opacity: 0.6;
+    left: -60%;
+  }
+  50% {
+    opacity: 0.6;
+    left: 130%;
+  }
+  100% {
+    opacity: 0.6;
+    left: 130%;
+  }
 }
