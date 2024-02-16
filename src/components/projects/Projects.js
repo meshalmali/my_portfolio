@@ -11,19 +11,8 @@ function Projects() {
     {
       name: "Let's Chat",
       description:
-        "A Web Chat Application written in React using Context API and realtime database configured with Firestore.",
-      url: "/projects/weChat.png",
-    },
-    {
-      name: "Admin Arcade",
-      description:
-        "Visualizes data in a user-friendly dashboard interface, with a fancy login screen using Tailwind CSS",
-      url: "/projects/noogle.png",
-    },
-    {
-      name: "New",
-      description: "Something coming up",
-      url: "/projects/noogle.png",
+        "A completely responsive Chat Application written in React using Context API and realtime database configured with Firestore.",
+      url: "/projects/chat.png",
     },
   ];
   return (
