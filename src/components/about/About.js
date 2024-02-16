@@ -1,68 +1,34 @@
 import React from "react";
-import "./About.css";
-import "../../App.css";
-import Navbar from "../header/Navbar";
+import Navbar from "../navbar/Navbar";
 
 function About() {
   return (
-    <div className="about" id="about">
+    <>
       <Navbar />
-      <div className="about-info">
-        <div className="about_left">
-          <div className="about_img">
-            <img src="/meee.jpg" />
-          </div>
+      <div
+        id="about-section"
+        className="h-screen bg-gradient-to-r from-teal-600 to-sky-600 flex flex-col lg:flex-row gap-8 lg:gap-16 2xl:gap-24 m-auto p-8 md:py-20 md:px-28"
+      >
+        <div className="bg-gradient-to-r rounded-[80px] from-teal-600 to-sky-600 border border-teal-600 h-full w-full 2xl:w-[75%] 2xl:h-[80%] shadow-2xl shadow-slate-950 p-8 2xl:p-20 mt-8 lg:mt-2">
+          <div
+            className="bg-no-repeat bg-cover bg-center rounded-[60px] h-full w-full"
+            style={{ backgroundImage: "url('/mee.jpg')" }}
+          ></div>
         </div>
-        <div className="about_right">
-          <div className="about_right_wrapper">
-            <h2>Hi there! This is</h2>
-            <h2>Shalmali Bhave </h2>
-            <h3>
-              I am a working IT professional. Keen to secure a position as a
-              Software Developer where there is every oppurtunity to constantly
-              learn, grow and deliver. When I am not working I love to bury
-              myself in novels or dance or swim. I also try my hand at poetry.
-              And before you ask, yes I am a dog person :)
-            </h3>
-          </div>
+        <div className="flex flex-col gap-2 lg:gap-10 items-center lg:items-start md:justify-start lg:w-4/5 lg:justify-center">
+          <span className="text-3xl md:text-4xl 2xl:text-5xl playfair-black text-center text-white">
+            Hi there! This is Shalmali Bhave
+          </span>
+          <span className="text-base md:text-xl p-2 lg:p-0 lg:text-2xl 2xl:text-4xl text-white handlee-regular">
+            I am a Software Engineer with 2.5 years of work experience. Keen to
+            secure a position where there is every oppurtunity to constantly
+            learn, grow and deliver. Beyond the realm of coding, I love to bury
+            myself in novels or dance. I also try my hand at poetry. And before
+            you ask, yes I am a dog person! ✨
+          </span>
         </div>
       </div>
-      <div class="social-icons" style={{ margin: 40 }}>
-        <a
-          class="social-icon-link github"
-          href="https://github.com/meshalmali"
-          target="_blank"
-          aria-label="Github"
-        >
-          <i class="fab fa-github" />
-        </a>
-        <a
-          class="social-icon-link instagram"
-          href="https://www.instagram.com/shalmalibhave/?target_user_id=35819792784&utm_source=instagram&utm_medium=email&utm_campaign=find_friend_activity_email&click_source=header_profile&__bp=1"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <i class="fab fa-instagram" />
-        </a>
-
-        <a
-          class="social-icon-link medium"
-          href="https://medium.com/@shalmali.bhave99"
-          target="_blank"
-          aria-label="Medium"
-        >
-          <i class="fab fa-medium" />
-        </a>
-        <a
-          class="social-icon-link LinkedIn"
-          href="https://in.linkedin.com/in/shalmali-bhave-601113163"
-          target="_blank"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin" />
-        </a>
-      </div>
-    </div>
+    </>
   );
 }
 

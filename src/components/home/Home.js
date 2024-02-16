@@ -7,12 +7,12 @@ import Skills from "../skills/Skills";
 
 function Home() {
   return (
-    <>
+    <div className="font-OakSans">
       <About />
       <Projects />
       <Skills />
       <Footer />
-    </>
+    </div>
   );
 }
 
