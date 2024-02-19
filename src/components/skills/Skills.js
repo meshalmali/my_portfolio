@@ -54,9 +54,9 @@ function Skills() {
   return (
     <div
       id="skills-section"
-      className="h-full bg-slate-900 flex flex-col gap-8 md:gap-20 2xl:gap-36 items-center p-8 md:py-20 md:px-28 2xl:py-36 2xl:px-0"
+      className="h-full bg-slate-900 flex flex-col gap-8 md:gap-14 lg:gap-16 2xl:gap-24 items-center p-8 md:py-14 lg:py-16 md:px-28 2xl:py-24 2xl:px-0"
     >
-      <span className="text-3xl md:text-4xl lg:text-5xl text-center playfair-black text-white">
+      <span className="text-3xl md:text-4xl 2xl:text-5xl text-center playfair-black text-white">
         My Current Skills
       </span>
       <div className="flex flex-wrap justify-center lg:max-w-[72rem] 2xl:max-w-[108.62rem] w-full gap-6 md:gap-12 lg:gap-16 px-8 mb-14">
@@ -70,7 +70,7 @@ function Skills() {
                     backgroundImage: `url(${skill.url})`,
                   }}
                 ></div>
-                <div className="mt-1 mb-[0.0625rem] lg:mt-2 lg:mb-1 playfair-light 2xl:mb-3 text-white text-xs md:text-sm lg:text-base 2xl:text-xl text-center">
+                <div className="mt-1 mb-[0.0625rem] lg:mt-2 lg:mb-1 font-light 2xl:mb-3 text-white text-xs md:text-sm lg:text-base 2xl:text-xl text-center">
                   {skill.name}
                 </div>
               </div>

@@ -97,8 +97,20 @@
   font-style: normal;
 }
 
+.handlee-semibold {
+  font-family: "Handlee", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.handlee-bold {
+  font-family: "Handlee", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
 .shadow-right {
-  box-shadow: 12px 0px 15px #59595f;
+  box-shadow: 12px 0px 15px #3e4856;
 }
 .shadow-plain {
   box-shadow: 8px 10px 4px #475569;

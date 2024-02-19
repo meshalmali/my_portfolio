@@ -22,7 +22,7 @@ function Navbar() {
           href="https://in.linkedin.com/in/shalmali-bhave-601113163"
           target="_blank"
         >
-          <span className="handlee-regular text-white text-lg">
+          <span className="handlee-semibold text-white text-lg lg:text-2xl 2xl:text-4xl">
             Shalmali Bhave
           </span>
         </a>
@@ -66,7 +66,7 @@ function Navbar() {
         </div>
       </div>
       {showMenu && (
-        <div className="w-full h-60 left-0 top-16 fixed menu-slide bg-white bg-opacity-10 backdrop-blur-lg z-50 flex flex-col items-center justify-center text-white playfair-black text-sm gap-4">
+        <div className="w-full h-full left-0 top-16 fixed menu-slide bg-white bg-opacity-10 backdrop-blur-lg z-50 flex flex-col items-center justify-start text-white playfair-black text-sm gap-8 pt-10">
           <a
             className="border rounded-xl px-3 py-1 cursor-pointer"
             onClick={() => handleClick("about-section")}
